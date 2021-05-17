@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elrumordelaluz/reactour.git"
+    "url": "git+https://github.com/akmaldju/reactour.git"
   },
   "keywords": [
     "react",
@@ -81,14 +81,14 @@
   },
   "dependencies": {
     "@rooks/use-mutation-observer": "3.4.2",
-    "react-virtualized": "^9.22.2",
-    "styled-components": "^5.0.0",
     "classnames": "2.2.6",
     "focus-outline-manager": "^1.0.2",
     "lodash.debounce": "4.0.8",
     "prop-types": "15.7.2",
     "react-focus-lock": "2.2.1",
+    "react-virtualized": "^9.22.2",
     "scroll-smooth": "1.1.0",
-    "scrollparent": "2.0.1"
+    "scrollparent": "2.0.1",
+    "styled-components": "^5.0.0"
   }
 }

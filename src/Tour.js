@@ -22,36 +22,36 @@ import { propTypes, defaultProps } from './propTypes'
 import CN from './classNames'
 
 function Tour({
+  accentColor,
+  accessibilityOptions,
   children,
-  isOpen,
-  startAt,
-  steps,
-  scrollDuration,
-  inViewThreshold,
-  scrollOffset,
-  disableInteraction,
-  disableKeyboardNavigation,
   className,
   closeWithMask,
-  onRequestClose,
+  CustomHelper,
+  disableDotsNavigation,
+  disableInteraction,
+  disableKeyboardNavigation,
+  highlightedMaskClassName,
+  inViewThreshold,
+  isOpen,
+  lastStepNextButton,
+  maskClassName,
+  maskSpace,
+  nextButton,
   onAfterOpen,
   onBeforeClose,
-  CustomHelper,
-  showNumber,
-  accentColor,
-  highlightedMaskClassName,
-  maskClassName,
-  showButtons,
-  showNavigation,
+  onRequestClose,
   prevButton,
-  showNavigationNumber,
-  disableDotsNavigation,
-  lastStepNextButton,
-  nextButton,
   rounded,
-  maskSpace,
+  scrollDuration,
+  scrollOffset,
+  showButtons,
   showCloseButton,
-  accessibilityOptions,
+  showNavigation,
+  showNavigationNumber,
+  showNumber,
+  startAt,
+  steps,
 }) {
   const [current, setCurrent] = useState(0)
   const [currentNode, setCurrentNode] = useState(null)
@@ -320,15 +320,15 @@ function Tour({
         >
           {CustomHelper ? (
             <CustomHelper
+              close={close}
+              content={stepContent}
               current={current}
-              totalSteps={steps.length}
               gotoStep={goTo}
               nextStep={nextStep}
-              prevStep={prevStep}
-              close={close}
-              steps={steps}
               node={currentNode}
-              content={stepContent}
+              prevStep={prevStep}
+              steps={steps}
+              totalSteps={steps.length}
             >
               {children}
             </CustomHelper>
