@@ -1,6 +1,6 @@
 {
   "name": "@akmaldju/reactour",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Tourist Guide into your React Components",
   "main": "dist/reactour.cjs.js",
   "module": "dist/reactour.esm.js",
