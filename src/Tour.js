@@ -54,6 +54,7 @@ function Tour({
   accessibilityOptions,
 }) {
   const [current, setCurrent] = useState(0)
+  const [currentNode, setCurrentNode] = useState(null)
   const [started, setStarted] = useState(false)
   const [state, dispatch] = useReducer(reducer, initialState)
   const helper = useRef(null)
@@ -68,6 +69,7 @@ function Tour({
       showStep()
       mutationList.forEach(mutation => {
         if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+          setCurrentNode(mutation.addedNodes[0])
           setTimeout(
             () => makeCalculations(getNodeRect(mutation.addedNodes[0])),
             500
@@ -321,7 +323,11 @@ function Tour({
               current={current}
               totalSteps={steps.length}
               gotoStep={goTo}
+              nextStep={nextStep}
+              prevStep={prevStep}
               close={close}
+              steps={steps}
+              node={currentNode}
               content={stepContent}
             >
               {children}
