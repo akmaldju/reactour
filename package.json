@@ -1,6 +1,6 @@
 {
-  "name": "@akmaldju/reactour",
-  "version": "1.0.5",
+  "name": "@deriv/deriv-onboarding",
+  "version": "1.0.0",
   "description": "Tourist Guide into your React Components",
   "main": "dist/reactour.cjs.js",
   "module": "dist/reactour.esm.js",
@@ -14,8 +14,7 @@
     "dev": "rollup -c -w"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akmaldju/reactour.git"
+    "type": "git"
   },
   "keywords": [
     "react",
@@ -76,8 +75,7 @@
   "peerDependencies": {
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
-    "react-is": "^16.8",
-    "styled-components": "^4.0.0 || ^5.0.0"
+    "react-is": "^16.8"
   },
   "dependencies": {
     "@rooks/use-mutation-observer": "3.4.2",
